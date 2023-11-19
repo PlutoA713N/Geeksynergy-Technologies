@@ -1,0 +1,89 @@
+/* MovieCard.css */
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-family: 'Times New Roman', serif; 
+  }
+
+.movie-card {
+    display: flex;
+    border: 1px solid #ccc;
+    width: 80vw; 
+    height:35vh;
+}
+
+.leftside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex:0.4;
+  }
+
+  .label-upvote {
+    width: 0;
+	  height: 0;
+	  border-left: 10px solid transparent;
+	  border-right: 10px solid transparent;
+	  border-bottom: 20px solid #555;
+  }
+  
+  
+  .label-downvote {
+    width: 0;  
+    height: 0;  
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-top: 20px solid rgb(92, 100, 92); 
+}
+
+.votes {
+  position: absolute;
+  margin-top: 210px;
+}
+
+.middle img {
+    object-fit: cover; 
+    width: 100%;
+    height: 98%; 
+}
+
+
+.rightside {
+  flex:1;
+  align-self: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  margin-left:  40px;
+}
+
+.rightside p {
+    margin:5px 0;
+  }
+
+  .gap {
+    display: inline-block;
+    color: rgb(2, 197, 197);
+    margin-top: 5px;
+  }
+
+.trailer {
+    display: flex;
+    width: 80vw;
+    height: 5vh;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    background-color: rgb(107, 149, 248);
+    margin: 3px 0;
+}
+
+
+button.hide {
+  visibility: hidden;
+}
